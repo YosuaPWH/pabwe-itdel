@@ -2,7 +2,8 @@
 
 ### 05-09-2022
 1. Membuat tampilan awal, berisikan daftar link ke hasil praktikum mingguan.
-    https://pabwe-itdel-ifs20032.herokuapp.com/
+    https://ifs20032.herokuapp.com
 
 ### 12-09-2022
-2. Membuat tampilan login
+2. Membuat tampilan login dan lupa password
+    https://ifs20032.herokuapp.com
