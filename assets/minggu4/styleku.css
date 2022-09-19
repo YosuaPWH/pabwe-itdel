@@ -1,0 +1,46 @@
+.judul {
+    font-family: 'Times New Roman';
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    border: 2px black solid;
+    width: 1024px;
+    height: 180px;
+    background-color: #1565C0;
+}
+
+article {
+    border: 2px solid black;
+    width: 750px;
+    height: fit-content;
+    font-size: 25px;
+}
+
+.identfoto {
+    display: flex;
+    height: auto;
+}
+
+.navAndTag {
+    display: flex;
+}
+
+footer {
+    width: 1024px;
+    height: 70px;
+    background-color: #1565C0;
+}
+
+.identitas {
+    width: 150px;
+    display: inline-block;
+}
+
+nav {
+    ;
+}
