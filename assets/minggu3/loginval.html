@@ -16,7 +16,7 @@
     <fieldset style="width: fit-content">
         <h1><u>Form Login</u></h1>
         <hr>
-        <form>
+        <form method="get" id="formYosua"  >
             <fieldset style="width: fit-content">
                 
                 <legend>Masukkan akun anda disini</legend>
@@ -26,19 +26,38 @@
                             <label>Username:</label>
                         </td>
                         <td><input type="text" name="txtUsername" 
-                            maxlength="8" placeholder="Username">
+                            maxlength="8" placeholder="Username"
+                            id="username">
                         </td>
                     </tr>
                     <tr>
                         <td><label>Password:</label></td>
-                        <td><input type="password" minlength="8" name="txtPassword"
-                            pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password"
-                            title="Minimal 8 karakter, 1 huruf besar dan 1 angka">
+                        <td><input type="password" name="txtPassword" minlength="8"
+                             placeholder="Password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Minimal 8 karakter, 1 huruf besar dan 1 angka"
+                            id="password">
                         </td>
                     </tr>     
                     <tr>
                         <td>
-                            <input type="submit" value="Submit">
+                            <button type="submit" onclick="myFunction()">Submit</button>
+                            <!-- <input type="submit" value="Submit" onclick="myFunction()"> -->
+                            <script>
+                                function myFunction() {
+                                    const myUsername = username.value
+                                    const myPassword = password.value
+                                    getUsername.value = 'Username: ' + myUsername
+                                    getPassword.value = 'Password: ' + myPassword
+                                    const checkUpperCase = myPassword !== myPassword.toLowerCase()
+                                    const checkContainsNumber = myPassword.match(/\d+/g)
+                                    
+                                    if (myPassword.length < 8 || !checkUpperCase || !checkContainsNumber){
+                                        keterangan.value = "Password tidak memenuhi kriteria minimal 8 karakter, 1 huruf besar dan 1 angka"
+                                    } else {
+                                        keterangan.value = "Password sudah memenuhi kriteria"
+                                    }
+                                }
+                            </script>
                         </td>
                         <td>
                             <a href="forgotten.html">Forgot username/password</a> 
@@ -49,6 +68,10 @@
             </fieldset>
             
         </form>
+            <!-- <output form="formYosua" id="output"></output> -->
+            <output id="getUsername"></output><br>
+            <output id="getPassword"></output><br>
+            <output id="keterangan"></output>
     </fieldset>
 </body>
 </html>
