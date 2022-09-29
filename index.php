@@ -22,6 +22,7 @@
                     <a href="assets/minggu2/profil.html" class="list-group-item list-group-item-action">Minggu Ke-2</a>
                     <a href="assets/minggu3/loginval.html" class="list-group-item list-group-item-action">Minggu Ke-3</a>
                     <a href="assets/minggu4/index.html" class="list-group-item list-group-item-action">Minggu Ke-4</a>
+                    <a href="assets/minggu5/tugas/mahasiswa.html" class="list-group-item list-group-item-action">Minggu Ke-5</a>
                 </div>
             </div>
         </div>
