@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pemrograman Javascript 5</title>
+</head>
+<body>
+    <p id="kuis"></p>
+    <script>
+        // Deklarasi variabel & array
+        var i
+        var ikan = new Array(5)
+        // Memasukkan 5 data kedalam array
+        for (i = 0; i < 5; i++) {
+            ikan[i] = window.prompt("Masukkan 5 nama ikan")
+        }
+        // Tampilkan 5 data yang telah dimasukkan
+        for (i = 0; i < 5; i++) {
+            document.write("Nama Ikan: " + ikan[i])
+            document.write("<br/>")
+        }
+    </script>
+</body>
+</html>

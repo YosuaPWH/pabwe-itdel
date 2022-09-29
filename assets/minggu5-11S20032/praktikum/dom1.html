@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Form Input</title>
+    <script>
+        function insertFun() {
+            let nama = document.getElementById("txtInputNama")
+            document.getElementById("hasilInput").innerHTML = nama.value
+        }
+
+        function gantiWarna() {
+            document.getElementById("hasilInput").style.color = randomColor()
+        }
+
+        function randomColor() {
+            return '#' + ('00000' + (Math.random() * 16777216 << 0).toString(16)).substr(-6);
+        }
+
+    </script>
+
+</head>
+<body>
+    <table>
+        <form action="" id="formKu">
+            <tr>
+                <td>Masukkan Nama Anda</td>
+                <td>:</td>
+                <td><input type="text" id="txtInputNama"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><button type="button" onclick="insertFun()">Insert</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Nama saya adalah</td>
+                <td></td>
+                <td><p id="hasilInput">...........</p></td>
+            </tr>
+            <tr>
+                <td><button type="button" id="btnGantiWarna" onclick="gantiWarna()">Ganti Warna</button></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

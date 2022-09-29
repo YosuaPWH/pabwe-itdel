@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Bootstrap</title>
+
+    <link rel="stylesheet" href="../../vendor/bootstrap5/css/bootstrap.min.css">
+    <style>
+        #btnLogin:hover {
+            color: #1565C0;
+        }
+        li {
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="container-fluid p-1 text-white d-flex justify-content-center" style="background-color: #1565C0;">
+        <img src="img/Logo_Del.jpg" class="mr-5" alt="" width="150px">
+        <h1 class="align-self-center" style="font-size: 48px; margin-left: 20px;">Situs Web Mahasiswa S1 Informatika</h1>
+        <a href="loginval.html" class="btn align-self-end"><button id="btnLogin" class="btn" style="background-color: white">Login</button></a>
+        
+    </header>
+
+    <div id="ArticleAndNav" class="d-flex">
+        <article style="width: 100%; font-size: 25px; border: 1px solid;" class="border border-primary">
+            <p style="display: flex; justify-content: center;">Selamat Datang di Situs Web Yosua Haloho</p>
+
+
+            <div id="SlideYosua" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#SlideYosua" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#SlideYosua" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#SlideYosua" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div style="background-color: #4e88ca">
+                            <object data="profil.html" style="width: 766px; height: 342px;"></object>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div style="width: auto; height: 350px; background-color: #4e88ca; align-content: center;" class="text-white" >
+                            <h1>Website Yosua Haloho</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div style="width: auto; height: 350px; background-color: #4e88ca;">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" data-bs-target="#SlideYosua" data-bs-slide="prev" type="button">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#SlideYosua" data-bs-slide="next" type="button">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>  
+            </div>
+        </article>  
+
+        <nav style="width: 300px; border: 2px solid;">
+            <ul style="list-style-type: none; margin-top: 50px;" id="buttonNav">
+                <li><a href="index.html"><button class="btn btn-outline-primary">Home</button></a></li>
+                <li><a href="profil.html"><button class="btn btn-outline-primary">Profil Diri</button></a></li>
+                <li><button class="btn btn-outline-primary">Register</button></li>
+            </ul>            
+        </nav>
+    </div>
+
+    <footer class="container-fluid p-5 text-white justify-content-center d-flex " style="background-color: #1565C0;">
+        <p style="font-size: 20px;">Copyright @ 11S20032-2022</p>
+    </footer>
+
+    <script src="../../vendor/bootstrap5/js/bootstrap.min.js"></script>
+    <script src="../../vendor/bootstrap5/js/bootstrap.bundle.js"></script>
+</body>
+</html>

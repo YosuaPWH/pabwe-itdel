@@ -40,3 +40,9 @@ footer {
     width: 150px;
     display: inline-block;
 }
+
+body {
+    max-width: max-content;
+    margin: auto;
+    vertical-align: middle;
+}

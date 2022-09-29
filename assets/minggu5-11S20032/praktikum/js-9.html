@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function validate(form) {
+            var returnValue = true
+            let username = document.getElementById("txtUserName")
+            let password1 = document.getElementById("txtPassword")
+            let password2 = document.getElementById("txtPassword2")
+            
+            if (username.value.length < 6) {
+                returnValue = false
+                alert("Username minimal 6 karakter.\n Coba lagi.")
+                document.getElementById("txtUserName").focus()
+            
+            }
+
+            if (password1.value.length < 6) {
+                returnValue = false
+                alert("Password minimal 6 karakter.\n Coba lagi.")
+                document.getElementById("txtPassword").focus()
+            }
+
+            if (password2.value != password1.value) {
+                returnValue = false
+                alert("Password tidak sesuai.\n Coba lagi.")
+                document.getElementById("txtPassword2").focus()
+            } else {
+                document.write("Selamat anda telah berhasil login")
+            }
+
+            return returnValue
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <form action="" name="frmRegister" method="post" 
+            onsubmit="return validate(this)">
+
+            <tr>
+                <td><label for="txtUserName">Username</label></td>
+                <td> : </td>
+                <td><input type="text" id="txtUserName" size="12"></td>
+            </tr>
+            <tr>
+                <td><label for="txtPassword">Password</label></td>
+                <td> : </td>
+                <td><input type="password" id="txtPassword" size="12"></td>
+            </tr>
+            <tr>
+                <td><label for="txtPassword2">Confirm your password</label></td>
+                <td> : </td>
+                <td><input type="password" id="txtPassword2" size="12"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" value="Log in"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
