@@ -5,27 +5,14 @@
 */ -->
 
 <?php
-    $KODE_MK = array(
-        "11S3109",
-        "11S3101",
-        "10S3109",
-        "11S3116",
-        "11S3112",
-        "11S3105"
-    );
-
-    $NAMA_MK = array(
-        "Pengembangan Aplikasi Berbasis Web",
-        "Analisis dan Perancangan Perangkat Lunak",
-        "Kecerdasan Buatan",
-        "Teori Bahasa Formal dan Automata",
-        "Pengujian dan Penjaminan Mutu Perangkat Lunak",
-        "Kriptografi dan Keamanan Informasi"
-    );
-
-    $BANYAK_SKS = array(
-        4, 3, 3, 3, 3, 3
-    );
+    $KODE_MK_SKS = array(
+        array("11S3109", "Pengembangan Aplikasi Berbasis Web", 4),
+        array("11S3101", "Analisis dan Perancangan Perangkat Lunak", 3),
+        array("10S3109", "Kecerdasan Buatan", 3),
+        array("11S3116", "Teori Bahasa Formal dan Automata", 3),
+        array("11S3112", "Pengujian dan Penjaminan Mutu Perangkat Lunak", 3),
+        array("11S3105", "Kriptografi dan Keamanan Informasi", 3)
+    )
 ?>
 
 <!DOCTYPE html>
@@ -73,9 +60,9 @@
         }
 
         $jumlahSKS = 0;
-        for ($x = 0; $x < count($KODE_MK); $x++) {
-            layoutYgDiulang($KODE_MK[$x], $NAMA_MK[$x], $BANYAK_SKS[$x]);
-            $jumlahSKS += $BANYAK_SKS[$x];
+        for ($x = 0; $x < count($KODE_MK_SKS); $x++) {
+            layoutYgDiulang($KODE_MK_SKS[$x][0], $KODE_MK_SKS[$x][1], $KODE_MK_SKS[$x][2]);
+            $jumlahSKS += $KODE_MK_SKS[$x][2];
         };
 
         echo(
