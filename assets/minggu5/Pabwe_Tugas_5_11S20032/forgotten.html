@@ -1,0 +1,100 @@
+<!-- 
+    Nama File   : forgotten.html
+    NIM         : 11S20032
+    Kelas       : 13IF2
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="width: fit-content">
+        
+        <h1>FORM LUPA PASSWORD</h1>
+        <hr>
+        <h4>Alur Reset Password:</h4>
+        <ol type="1">
+            <li>Mahasiswa mengisi form Lupa Password</li>
+            <li>Mahasiswa mengisi nama lengkap</li>
+            <li>Lalu mengisi Nomor Induk Mahasiswa</li>
+            <li>Mahasiswa mengisi email yang digunakan</li>
+            <li>Mahasiswa mengisi nomor whatsapp yang aktif untuk dikonfirmasi oleh Admin</li>
+            <li>Admin mereset password Akun Mahasiswa dan akan di konfirmasikan ke Mahasiswa</li>
+            <li>Proses Selesai, akun Email siap digunakan mahasiswa kembali</li>
+            <li>Silahkan isi Form Dibawah ini</li>
+        </ol>
+        
+        <h3>Form Pendataan</h3>
+        <p>Bagi Mahasiswa yang lupa password email nya silahkan isi data nya disini</p>
+        <form action="" method="post">
+            <fieldset>
+                <table>
+                    <tr>
+                        <td>
+                            <label>
+                                Nama Lengkap <font color="red">*</font>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" pattern="{1,}" placeholder="Nama Lengkap"
+                            title="Silahkan mengisi inputan">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                Nomor Induk Mahasiswa <font color="red">*</font>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" pattern="{1,}" placeholder="NIM"
+                            title="Silahkan mengisi inputan">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                Email yang digunakan <font color="red">*</font>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Email" pattern="{8,}"
+                            title="Silahkan mengisi inputan">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                Nomor Whatsapp Aktif <font color="red">*</font>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Nomor Whatsapp" pattern="{1,}"
+                            title="Silahkan mengisi inputan">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+                
+            </fieldset>
+        </form>
+    </fieldset>
+</body>
+</html>

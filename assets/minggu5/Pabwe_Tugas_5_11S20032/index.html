@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="skripResetPassword.js"></script>
+    <title>YOSUA H</title>
+</head>
+<body>
+    <header class="container-fluid d-flex justify-content-center p-3" style="background-color: #1565C0;">
+        <img src="img/Logo_Del.jpg" alt="">
+        <h1 class="text-white align-self-center mx-5 text-center">Situs Web Mahasiswa S1 Informatika</h1>
+        <a href="" class="align-self-center"><button class="btn btn-primary" >Login</button></a>
+    </header>
+    <div class="d-flex justify-content-center" style="background-color: #699eda; height: 750px; ">
+        <article>
+            <!-- <object type="text/html" data="resetpassword.html" width="1000px" height="575px"></object> -->
+            <iframe id="resetPassword" src="resetpassword.html" width="1000px" height="749px" style="display: none;"></iframe>
+            <iframe id="profil" src="profil.html" width="1000px" height="749px" style="display: block;"></iframe>
+        </article>
+
+        <nav style="width: 200px; background-color: white;">
+            <div style="margin-top: 100%;">
+                <ul style="list-style-type: none;" id="buttonNav" >
+                    <li style="margin-bottom: 20px;"><a href="index.html"><button class="btn btn-outline-primary">Home</button></a></li>
+                    <li style="margin-bottom: 20px;"><button class="btn btn-outline-primary" onclick="changeToProfil()">Profil Diri</button></li>
+                    <li><button class="btn btn-outline-primary" onclick="changeToResetPassword()">Lupa Password</button></li>
+                </ul> 
+            </div>
+        </nav>
+    </div>
+
+    <footer class="container-fluid text-white p-3 d-flex justify-content-center" style="background-color: #1565C0;">
+        <p>Copyright @ 11S20032 - 2022</p>
+    </footer>
+    
+</body>
+</html>

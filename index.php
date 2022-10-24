@@ -23,6 +23,8 @@
                     <a href="assets/minggu3/loginval.html" class="list-group-item list-group-item-action">Minggu Ke-3</a>
                     <a href="assets/minggu4/index.html" class="list-group-item list-group-item-action">Minggu Ke-4</a>
                     <a href="assets/minggu5/tugas/mahasiswa.html" class="list-group-item list-group-item-action">Minggu Ke-5</a>
+                    <a href="assets/minggu5/Pabwe_Tugas_5_11S20032/index.html" class="list-group-item list-group-item-action">Minggu Ke-5.1 Tugas5</a>
+                    <a href="assets/minggu9/KRS_11S20032.php" class="list-group-item list-group-item-action">Minggu Ke-9</a>
                 </div>
             </div>
         </div>
