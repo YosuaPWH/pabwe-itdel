@@ -25,6 +25,7 @@
                     <a href="assets/minggu5/tugas/mahasiswa.html" class="list-group-item list-group-item-action">Minggu Ke-5</a>
                     <a href="assets/minggu5/Pabwe_Tugas_5_11S20032/index.html" class="list-group-item list-group-item-action">Minggu Ke-5.1 Tugas5</a>
                     <a href="assets/minggu9/KRS_11S20032.php" class="list-group-item list-group-item-action">Minggu Ke-9</a>
+                    <a href="https://instalasi-laravel.herokuapp.com/" class="list-group-item list-group-item-action">Minggu Ke-9-Instalasi Laravel</a>
                 </div>
             </div>
         </div>
